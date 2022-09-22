@@ -1,0 +1,222 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	font: inherit 110%;
+}
+
+
+
+.header {
+	
+  background: rgba(66, 73, 73 ,0.6);
+  color: black;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+
+}
+
+.nav{
+	background-color: black;
+	width: 100%;
+	height: 50px;
+}
+nav ul{
+	float: right;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+nav ul li{
+	display: inline;
+	margin: 0px 5px;
+}
+nav ul li a{
+	color: white;
+	font-size: 18px;
+	padding:3px 10px;
+	border-radius: 3px;
+
+}
+a.active{
+	background-color: darkred;
+}
+
+.principal{
+	
+	width: 100%;
+	height: calc(100vh - 250px);
+	display: flex;
+	
+
+}
+.section{
+	background-color: black;
+	width: 50%;
+	height: 100%;
+	justify-content: center;
+	
+}
+
+.contenedor-video{
+	position: relative;
+	overflow: hidden;
+	padding-top: 56.25%;
+
+	
+
+}
+.contenedor-video iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.aside{
+	background-color: black;
+	width: 50%;
+	height: 100%;
+}
+.overlay{
+	background: rgba(0, 0, 0,.8);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.popup{
+	background: #f1f1f1;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	font-family: inherit;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+}
+/*.popup .btn-cerrar{
+	font-size:16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	color: #BBBBBB;
+	transition: .3s ease all;
+}
+.popup .btn-cerrar:hover{
+	color: #000 ;
+}*/
+ /*utilizado para ponerle al icono de cerrar*/
+.popup form .inputs-c{
+
+}
+.popup form .inputs-c input{
+	width: 100%;
+	margin-bottom: 20px;
+	height: 52px;
+	line-height: 52px;
+	font-size: 18px;
+	text-align: center;
+	border: 1px solid #BBBBBB ;
+	
+}
+.popup form .btn-submit{
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: darkred;
+	border-radius: 3px;
+	font-family: inherit;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 3s ease all;
+}
+
+
+/*.position{
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.slider{
+	background-image: url(img/pelicula1.jpg);
+	background-size: cover;
+	height: 50%;
+	width: 50%;
+	border-radius: 10px;
+	animation: animate 10s infinite;
+}
+
+@keyframes animate{
+	40%{
+		background-image: url(img/pelicula4.jpg);
+	}
+	60%{
+		background-image: url(img/pelicula3.jpg);
+	}
+	80%{
+		background-image: url(img/pelicula2.jpg);
+	}
+	100%{
+		background-image: url(img/pelicula2.jpg);
+	}
+}*/
+
+
+
+#footer {
+				
+	background-color: rgba(66, 73, 73 ,0.6);
+	text-align: center;
+	height: 100px;
+	width: 100%;
+
+	
+	/*padding: 0.2em 0;*/
+	/*position: absolute;
+	bottom: 0;*/
+
+	/*Solucionar un problema en especifico que es
+	 el anclaje de cada posición,
+	 se implementó la solución de agregarle
+	  al foot un padding, 
+	la posición absolute y bottom 0 
+	(ya que entró en conflicto con 
+	la pagina al implementar el
+	 float: left para section y aside, se puso 
+	en este
+	caso el footer debajo del header que contiene la 
+	posición relative [enfasis: cada absolute se subordina
+	a la posición relative], pero al momento de colocar
+	la posición relative en el body no se soluciona el
+	problema porque el body se está tomando cómo si fuera
+	solo el header) */
+	
+	
+	
+	}
+
+				
+
+#footer .copyright {
+	margin: 0 0 1em 0;
+	}
+
+#footer .copyright li {
+	border-left-width: 1px;
+						
+	line-height: 1em;
+	margin-left: 0.75em;
+	padding-left: 0.75em;
+	}
